@@ -9,61 +9,26 @@ namespace PetShop_WINDOWSFORM.Conexao
 {
     public class ConexaoBD
     {
-
-        /*public MySqlConnection OpenBD()
-        {
-            string connection = "server = localhost; uid = root; password= Ro15704123456; port = 3306; database = teste";
-
-            MySqlConnection conexao = new MySqlConnection(connection);
-
-            conexao.Open();
-
-            return conexao;
-
-        }
-
-        public void CloseBD(MySqlConnection conexao)
-        {
-            conexao.Close();
-        }*/
-
-        /*public MySqlConnection ConnectionBD()
-        {
-
-        }*/
-
-        MySqlConnection conn = null;
+        MySqlConnection conn;
         string connection = "server = localhost; database = teste; user = root; password = Ro15704123456; port = 3306";
 
         public ConexaoBD()
         {
             conn = new MySqlConnection(connection);
+        }
+        public void OpenBD()
+        {
             conn.Open();
         }
-        
-
-         
-        
-
-        /*public void OpenBD()
-        {
-            
-
-            conn.Open();
-
-            return conn;
-        }*/
-
         public void CloseBD()
         {
-            conn.Close(); 
+            conn.Close();
         }
-
-        public MySqlConnection GetConnection()
-        {
+        public MySqlConnection GetConnection() 
+        {   
             return conn;
-        }
-
-
+        }   
     }
+
+
 }

@@ -41,6 +41,7 @@
             // 
             // button2
             // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button2.Location = new System.Drawing.Point(487, 433);
             this.button2.Name = "button2";
@@ -52,6 +53,7 @@
             // 
             // button1
             // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.Location = new System.Drawing.Point(585, 433);
             this.button1.Name = "button1";
@@ -88,7 +90,7 @@
             this._label_Titutlo.AutoSize = true;
             this._label_Titutlo.BackColor = System.Drawing.Color.Transparent;
             this._label_Titutlo.Font = new System.Drawing.Font("Century Gothic", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this._label_Titutlo.Location = new System.Drawing.Point(500, 210);
+            this._label_Titutlo.Location = new System.Drawing.Point(489, 210);
             this._label_Titutlo.Name = "_label_Titutlo";
             this._label_Titutlo.Size = new System.Drawing.Size(175, 46);
             this._label_Titutlo.TabIndex = 9;

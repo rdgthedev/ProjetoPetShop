@@ -1,4 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
+using PetShop_WINDOWSFORM.Agendamentos;
+using PetShop_WINDOWSFORM.ClasseBase;
 using PetShop_WINDOWSFORM.Conexao;
 using System;
 using System.Collections.Generic;
@@ -19,25 +21,22 @@ namespace PetShop_WINDOWSFORM.Telas
             InitializeComponent();
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            string nome = "", email = "", senha = "", confirmSenha = "", cpf = "", telefone = "", rua = "", cep = "", num = "", estado = "";
+            string nome = null, email = null, senha = null, confirmSenha = null, cpf = null, telefone = null, rua = null, cep = null, num = null, estado = null;
 
             try
             {
                 if (!string.IsNullOrEmpty(_txt_Nome.Text))
                 {
                     nome = _txt_Nome.Text;
+                    //usuario.Nome = _txt_Nome.Text;
                 }
 
                 if (!string.IsNullOrEmpty(_txt_Email.Text))
                 {
                     email = _txt_Email.Text;
+                    //usuario.Cep = _txt_Email.Text;
                 }
 
                 if (!string.IsNullOrEmpty(_txt_Senha.Text))
@@ -48,6 +47,7 @@ namespace PetShop_WINDOWSFORM.Telas
                 if (!string.IsNullOrEmpty(_txt_ConfirmSenha.Text))
                 {
                     confirmSenha = _txt_Nome.Text;
+
                 }
 
                 if (!string.IsNullOrEmpty(_txt_Cpf.Text))
@@ -79,14 +79,11 @@ namespace PetShop_WINDOWSFORM.Telas
                 {
                     estado = _txt_Estado.Text;
                 }
-
-
                 string query = $"INSERT INTO cliente(nome, email, senha, cpf, telefone, rua, cep, numero, estado) VALUES ('{nome}', '{email}', '{senha}', '{cpf}', '{telefone}', '{rua}', '{cep}', '{num}', '{estado}')";
 
                 ConexaoBD conexao = new ConexaoBD();
-                //conexao.OpenBD();
+                conexao.OpenBD();
                 MySqlCommand command = new MySqlCommand(query, conexao.GetConnection());
-
 
                 if (command.ExecuteNonQuery() == 1)
                 {
@@ -94,7 +91,6 @@ namespace PetShop_WINDOWSFORM.Telas
                 }
 
                 conexao.CloseBD();
-
             }
             catch (Exception ex)
             {
@@ -111,14 +107,9 @@ namespace PetShop_WINDOWSFORM.Telas
             telaLogin.Show();
         }
 
-        private void TelaCadastro_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void _btn_Fechar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
     }
     }

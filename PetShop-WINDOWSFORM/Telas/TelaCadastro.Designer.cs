@@ -57,6 +57,7 @@
             // 
             // button1
             // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(493, 642);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(115, 31);
@@ -70,7 +71,7 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(395, 579);
+            this.label10.Location = new System.Drawing.Point(395, 581);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(46, 13);
             this.label10.TabIndex = 47;
@@ -106,7 +107,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(395, 524);
+            this.label8.Location = new System.Drawing.Point(395, 527);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(50, 13);
             this.label8.TabIndex = 43;
@@ -142,7 +143,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(395, 417);
+            this.label6.Location = new System.Drawing.Point(395, 420);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(30, 13);
             this.label6.TabIndex = 39;
@@ -178,7 +179,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(395, 264);
+            this.label4.Location = new System.Drawing.Point(395, 267);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(98, 13);
             this.label4.TabIndex = 35;
@@ -216,7 +217,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(395, 157);
+            this.label3.Location = new System.Drawing.Point(395, 160);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(41, 13);
             this.label3.TabIndex = 31;
@@ -269,7 +270,7 @@
             this._btn_Voltar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this._btn_Voltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this._btn_Voltar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this._btn_Voltar.Location = new System.Drawing.Point(-8, 9);
+            this._btn_Voltar.Location = new System.Drawing.Point(-9, 9);
             this._btn_Voltar.Margin = new System.Windows.Forms.Padding(0);
             this._btn_Voltar.Name = "_btn_Voltar";
             this._btn_Voltar.Size = new System.Drawing.Size(99, 44);
@@ -328,7 +329,6 @@
             this.Name = "TelaCadastro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaCadastro";
-            this.Load += new System.EventHandler(this.TelaCadastro_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
